@@ -9,6 +9,7 @@ import Foundation
 
 struct ForecastViewModel {
     let forecast: Forecast.Daily
+    var system: Int
     
     private static var dateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
@@ -28,6 +29,15 @@ struct ForecastViewModel {
         return numberFormatter
     }
     
+    func convert(_ temp: Double) -> Double {
+        let celsius = temp - 273.5
+        if system == 0 {
+            return celsius
+        } else {
+            return celsius * 9 / 5 + 32
+        }
+    }
+    
     var day: String {
         return Self.dateFormatter.string(from: forecast.dt)
     }
@@ -37,15 +47,15 @@ struct ForecastViewModel {
     }
     
     var high: String {
-        return "H: \(Self.numberFormatter.string(for: forecast.temp.max) ?? "0")°"
+        return "H: \(Self.numberFormatter.string(for: convert(forecast.temp.max)) ?? "0")°"
     }
     
     var low: String {
-        return "H: \(Self.numberFormatter.string(for: forecast.temp.min) ?? "0")°"
+        return "H: \(Self.numberFormatter.string(for: convert(forecast.temp.min)) ?? "0")°"
     }
     
     var precip: String {
-        return "💧 \(Self.numberFormatter2.string(for: forecast.pop) ?? "0%")"
+        return "💧 \(Self.numberFormatter2.string(for: forecast.pop) ?? "0")%"
     }
     
     var clouds: String {
@@ -54,5 +64,10 @@ struct ForecastViewModel {
     
     var humidity: String {
         return "Humidity: \(forecast.humidity)%"
+    }
+    
+    var weatherIconURL: URL {
+        let urlString = "https://openweathermap.org/img/wn/\(forecast.weather[0].icon)@2x.png"
+        return URL(string: urlString)!
     }
 }
