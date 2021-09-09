@@ -91,7 +91,7 @@
 		AD5B7F2426DE86FA002EADC9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		AD5B7F2826DE8AD7002EADC9 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
 		ADBC2F1E26E4373F00F3DDB9 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
-		ADCA6B2026DD30E400895DB9 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCA6B2026DD30E400895DB9 /* EssentialWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA6B2326DD30E400895DB9 /* Weather_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_AppApp.swift; sourceTree = "<group>"; };
 		ADCA6B2526DD30E400895DB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADCA6B2A26DD30E600895DB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		ADCA6B1726DD30E400895DB9 = {
 			isa = PBXGroup;
 			children = (
-				ADCA6B2226DD30E400895DB9 /* Weather App */,
+				ADCA6B2226DD30E400895DB9 /* EssentialWeather */,
 				AD26460C26E902FB004691F7 /* EssentialWeatherWatch */,
 				AD26461726E902FE004691F7 /* EssentialWeatherWatch Extension */,
 				ADCA6B2126DD30E400895DB9 /* Products */,
@@ -196,14 +196,14 @@
 		ADCA6B2126DD30E400895DB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADCA6B2026DD30E400895DB9 /* Weather App.app */,
+				ADCA6B2026DD30E400895DB9 /* EssentialWeather.app */,
 				AD26460B26E902FB004691F7 /* EssentialWeatherWatch.app */,
 				AD26461326E902FE004691F7 /* EssentialWeatherWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADCA6B2226DD30E400895DB9 /* Weather App */ = {
+		ADCA6B2226DD30E400895DB9 /* EssentialWeather */ = {
 			isa = PBXGroup;
 			children = (
 				AD59962026E7CC4000C15F97 /* Weather-App-Info.plist */,
@@ -217,7 +217,7 @@
 				AD59962126E7CF1300C15F97 /* Assets.xcassets */,
 				ADCA6B2926DD30E600895DB9 /* Preview Content */,
 			);
-			path = "Weather App";
+			path = EssentialWeather;
 			sourceTree = "<group>";
 		};
 		ADCA6B2926DD30E600895DB9 /* Preview Content */ = {
@@ -273,9 +273,9 @@
 			productReference = AD26461326E902FE004691F7 /* EssentialWeatherWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		ADCA6B1F26DD30E400895DB9 /* Weather App */ = {
+		ADCA6B1F26DD30E400895DB9 /* EssentialWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADCA6B2E26DD30E600895DB9 /* Build configuration list for PBXNativeTarget "Weather App" */;
+			buildConfigurationList = ADCA6B2E26DD30E600895DB9 /* Build configuration list for PBXNativeTarget "EssentialWeather" */;
 			buildPhases = (
 				ADCA6B1C26DD30E400895DB9 /* Sources */,
 				ADCA6B1D26DD30E400895DB9 /* Frameworks */,
@@ -287,12 +287,12 @@
 			dependencies = (
 				AD26462A26E90300004691F7 /* PBXTargetDependency */,
 			);
-			name = "Weather App";
+			name = EssentialWeather;
 			packageProductDependencies = (
 				AD18FBE626DFAA1B00C34C9F /* SDWebImageSwiftUI */,
 			);
 			productName = "Weather App";
-			productReference = ADCA6B2026DD30E400895DB9 /* Weather App.app */;
+			productReference = ADCA6B2026DD30E400895DB9 /* EssentialWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +316,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADCA6B1B26DD30E400895DB9 /* Build configuration list for PBXProject "Weather App" */;
+			buildConfigurationList = ADCA6B1B26DD30E400895DB9 /* Build configuration list for PBXProject "EssentialWeather" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -332,7 +332,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADCA6B1F26DD30E400895DB9 /* Weather App */,
+				ADCA6B1F26DD30E400895DB9 /* EssentialWeather */,
 				AD26460A26E902FB004691F7 /* EssentialWeatherWatch */,
 				AD26461226E902FE004691F7 /* EssentialWeatherWatch Extension */,
 			);
@@ -424,7 +424,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "EssentialWeatherWatch Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "EssentialWeatherWatch Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = EssentialWeatherWatch_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +432,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -455,7 +455,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "EssentialWeatherWatch Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "EssentialWeatherWatch Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = EssentialWeatherWatch_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +463,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -487,9 +487,9 @@
 				IBSC_MODULE = EssentialWeatherWatch_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = EssentialWeatherWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.baralabs.Weather-App";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.baralabs.EssentialWeather;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -513,9 +513,9 @@
 				IBSC_MODULE = EssentialWeatherWatch_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = EssentialWeatherWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.baralabs.Weather-App";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.baralabs.EssentialWeather;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -653,7 +653,7 @@
 				DEVELOPMENT_TEAM = CF655ESNGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Weather-App-Info.plist";
+				INFOPLIST_FILE = EssentialWeather.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -665,7 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -684,7 +684,7 @@
 				DEVELOPMENT_TEAM = CF655ESNGC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Weather-App-Info.plist";
+				INFOPLIST_FILE = EssentialWeather.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -696,7 +696,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.baralabs.Weather-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baralabs.EssentialWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -725,7 +725,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADCA6B1B26DD30E400895DB9 /* Build configuration list for PBXProject "Weather App" */ = {
+		ADCA6B1B26DD30E400895DB9 /* Build configuration list for PBXProject "EssentialWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADCA6B2C26DD30E600895DB9 /* Debug */,
@@ -734,7 +734,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADCA6B2E26DD30E600895DB9 /* Build configuration list for PBXNativeTarget "Weather App" */ = {
+		ADCA6B2E26DD30E600895DB9 /* Build configuration list for PBXNativeTarget "EssentialWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADCA6B2F26DD30E600895DB9 /* Debug */,
