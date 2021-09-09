@@ -86,7 +86,7 @@
 		AD26462526E90300004691F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD26462726E90300004691F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD26462826E90300004691F7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		AD59962026E7CC4000C15F97 /* Weather-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Weather-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AD59962026E7CC4000C15F97 /* EssentialWeather.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EssentialWeather.plist; sourceTree = SOURCE_ROOT; };
 		AD59962126E7CF1300C15F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5B7F2426DE86FA002EADC9 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		AD5B7F2826DE8AD7002EADC9 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		ADCA6B2226DD30E400895DB9 /* EssentialWeather */ = {
 			isa = PBXGroup;
 			children = (
-				AD59962026E7CC4000C15F97 /* Weather-App-Info.plist */,
+				AD59962026E7CC4000C15F97 /* EssentialWeather.plist */,
 				ADBC2F1D26E4372B00F3DDB9 /* Extensions */,
 				ADCA6B2326DD30E400895DB9 /* Weather_AppApp.swift */,
 				AD5B7F2326DE86D9002EADC9 /* Models */,
